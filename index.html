@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <title>Tip calculator FrondEnd Mentor Project</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <h1>spli<br>tter</h1>
+        </header>
+        <main class="calculator">
+
+            <!--Begining of left section of calculator desktop version-->
+            <div class="calculator__section_left">
+                <div action="#" class="section__left_bill">
+                    <p>Bill</p>
+                    <label for="bill" class="dollar">$</label>
+                    <input style='font-size: 24px' id="bill" type="text" name="bill" placeholder="0" required="true" value="">
+               </div>
+                <div class="section__left_tip">
+                    <p>Select Tip %</p>
+                    <div class="section__left_tip-percent">
+                        <button class="button">
+                            <span class="percent">5%</span>
+                        </button>
+                        <button class="button">
+                            <span class="percent">10%</span>
+                        </button>
+                        <button id="defButton" class="button">
+                            <span  class="percent">15%</span>
+                        </button>
+                        <button class="button">
+                            <span class="percent">25%</span>
+                        </button>
+                        <button class="button">
+                            <span class="percent">50%</span>
+                        </button>
+                        <button class="button_custom">
+                            <span id="custom">Custom</span>
+                        </button>
+                    </div>
+                </div>
+               <div action="#" class="section__left_people">
+                    <p>Number of People</p>
+                    <img src="images/icon-person.svg" alt="person icon">
+                    <input style='font-size: 24px' id="person" class="" type="text" placeholder="0" value="" required="true">
+               </div>
+            </div>
+            <!--The end of left section of calculator desktop version-->
+
+            <!--Begining of right section of calculator desktop version-->
+            <form class="calculator__section_right">
+                <div class="calculator__section_right-tip">
+                    <div class="tip_amount">
+                        <p><span class="white_text">Tip amount</span><br><span class="grey_text">/ person</span></p>
+                        <p><span id="tipPerPerson"class="green_price">0</span></p>
+                    </div>
+                    <div class="tip_total">
+                        <p><span class="white_text">Total</span><br><span class="grey_text">/ person</span></p>
+                        <p><span id="tipTotal" class="green_price">0</span></p>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="reset" value="reset" id="reset" class="reset_button">reset</button>
+                </div>
+            </form>
+            <!--The end of right section of calculator desktop version-->
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
